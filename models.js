@@ -20,52 +20,52 @@ const Note = (function() {
 const DrumKit = (function() {
   const drumKits = {
     tr808: {
-      kick:'audio/Roland TR-808/Bassdrum-04.wav',
-      snare:'audio/Roland TR-808/Snaredrum.wav',
-      ohat:'audio/Roland TR-808/hat-open.wav',
-      chat:'audio/Roland TR-808/hat-closed.wav'
+      kick:'https://s3.amazonaws.com/beat-machine-audio/tr-808-kick.wav',
+      snare:'https://s3.amazonaws.com/beat-machine-audio/tr-808-snare.wav',
+      ohat:'https://s3.amazonaws.com/beat-machine-audio/tr-808-hat-open.wav',
+      chat:'https://s3.amazonaws.com/beat-machine-audio/tr-808-hat-closed.wav'
     },
     tr909: {
-      kick:'https://s3.amazonaws.com/beat-machine-audio/Bassdrum-03.wav',
-      snare:'https://s3.amazonaws.com/beat-machine-audio/Clap.wav',
-      ohat:'https://s3.amazonaws.com/beat-machine-audio/hat-open.wav',
-      chat:'https://s3.amazonaws.com/beat-machine-audio/hat-closed.wav'
+      kick:'https://s3.amazonaws.com/beat-machine-audio/tr-909-kick.wav',
+      snare:'https://s3.amazonaws.com/beat-machine-audio/tr-909-clap.wav',
+      ohat:'https://s3.amazonaws.com/beat-machine-audio/tr-909-hat-open.wav',
+      chat:'https://s3.amazonaws.com/beat-machine-audio/tr-909-hat-closed.wav'
     },
     trap1: {
-      kick:'audio/TRAP1/trap-kick.WAV',
-      snare:'audio/TRAP1/trap-1-snare.WAV',
-      ohat:'audio/TRAP1/trap-ride.wav',
-      chat:'audio/TRAP1/Trap Chant.wav'
+      kick:'https://s3.amazonaws.com/beat-machine-audio/trap-1-kick.wav',
+      snare:'https://s3.amazonaws.com/beat-machine-audio/trap-1-snare.wav',
+      ohat:'https://s3.amazonaws.com/beat-machine-audio/trap-1-ride.wav',
+      chat:'https://s3.amazonaws.com/beat-machine-audio/trap-1-chant.wav'
     },
     trap2: {
-      kick:'audio/TRAP2/trap-kick.wav',
-      snare:'audio/TRAP2/trap-2-snare.WAV',
-      ohat:'audio/TRAP2/trap-2-ohat.wav',
-      chat:'audio/TRAP2/Hat_Closed_02.wav'
+      kick:'https://s3.amazonaws.com/beat-machine-audio/trap-2-kick.wav',
+      snare:'https://s3.amazonaws.com/beat-machine-audio/trap-2-snare.wav',
+      ohat:'https://s3.amazonaws.com/beat-machine-audio/trap-2-ohat.wav',
+      chat:'https://s3.amazonaws.com/beat-machine-audio/trap-2-chat.wav'
     },
     trap3: {
-      kick: 'audio/TRAP3/trap-3-kick.wav',
-      snare: 'audio/TRAP3/trap-3-snare.wav',
-      ohat: 'audio/TRAP3/trap-3-808.wav',
-      chat: 'audio/TRAP3/trap-3-chat.wav'
+      kick: 'https://s3.amazonaws.com/beat-machine-audio/trap-3-kick.wav',
+      snare: 'https://s3.amazonaws.com/beat-machine-audio/trap-3-snare.wav',
+      ohat: 'https://s3.amazonaws.com/beat-machine-audio/trap-3-808.wav',
+      chat: 'https://s3.amazonaws.com/beat-machine-audio/trap-3-chat.wav'
     },
     anotherKit: {
-      kick:'audio/another kit/LF_kick_08.wav',
-      snare:'audio/another kit/LF_snare_01.wav',
-      ohat:'audio/another kit/LF_hihat_open_03.wav',
-      chat:'audio/another kit/LF_hihat_closed_05.wav'
+      kick:'https://s3.amazonaws.com/beat-machine-audio/LF_kick_08.wav',
+      snare:'https://s3.amazonaws.com/beat-machine-audio/LF_snare_01.wav',
+      ohat:'https://s3.amazonaws.com/beat-machine-audio/LF_hihat_open_03.wav',
+      chat:'https://s3.amazonaws.com/beat-machine-audio/LF_hihat_closed_05.wav'
     },
     airhorns: {
-      kick:'audio/airhorns/airhorn1.wav',
-      snare:'audio/airhorns/airhorn2.wav',
-      ohat:'audio/airhorns/airhorn3.wav',
-      chat:'audio/airhorns/airhorn4.wav'
+      kick:'https://s3.amazonaws.com/beat-machine-audio/airhorn1.wav',
+      snare:'https://s3.amazonaws.com/beat-machine-audio/airhorn2.wav',
+      ohat:'https://s3.amazonaws.com/beat-machine-audio/airhorn3.wav',
+      chat:'https://s3.amazonaws.com/beat-machine-audio/airhorn4.wav'
     },
     grapelady: {
-      kick: 'audio/GrapeLady/grape1.mp3',
-      snare: 'audio/GrapeLady/grape2.mp3',
-      ohat: 'audio/GrapeLady/grape3.mp3',
-      chat: 'audio/GrapeLady/grape4.mp3'
+      kick: 'https://s3.amazonaws.com/beat-machine-audio/grape1.mp3',
+      snare: 'https://s3.amazonaws.com/beat-machine-audio/grape2.mp3',
+      ohat: 'https://s3.amazonaws.com/beat-machine-audio/grape3.mp3',
+      chat: 'https://s3.amazonaws.com/beat-machine-audio/grape4.mp3'
     }
 
   }
