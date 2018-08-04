@@ -26,10 +26,10 @@ const DrumKit = (function() {
       chat:'audio/Roland TR-808/hat-closed.wav'
     },
     tr909: {
-      kick:'audio/Roland TR-909/Bassdrum-03.wav',
-      snare:'audio/Roland TR-909/Clap.wav',
-      ohat:'audio/Roland TR-909/hat-open.wav',
-      chat:'audio/Roland TR-909/hat-closed.wav'
+      kick:'https://s3.amazonaws.com/beat-machine-audio/Bassdrum-03.wav',
+      snare:'https://s3.amazonaws.com/beat-machine-audio/Clap.wav',
+      ohat:'https://s3.amazonaws.com/beat-machine-audio/hat-open.wav',
+      chat:'https://s3.amazonaws.com/beat-machine-audio/hat-closed.wav'
     },
     trap1: {
       kick:'audio/TRAP1/trap-kick.WAV',
