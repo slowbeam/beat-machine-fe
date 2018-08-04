@@ -22,25 +22,25 @@ const DrumKit = (function() {
     tr808: {
       kick:'audio/Roland TR-808/Bassdrum-04.wav',
       snare:'audio/Roland TR-808/Snaredrum.wav',
-      ohat:'audio/Roland TR-808/Hat Open.wav',
-      chat:'audio/Roland TR-808/Hat Closed.wav'
+      ohat:'audio/Roland TR-808/hat-open.wav',
+      chat:'audio/Roland TR-808/hat-closed.wav'
     },
     tr909: {
       kick:'audio/Roland TR-909/Bassdrum-03.wav',
       snare:'audio/Roland TR-909/Clap.wav',
-      ohat:'audio/Roland TR-909/Hat Open.wav',
-      chat:'audio/Roland TR-909/Hat Closed.wav'
+      ohat:'audio/Roland TR-909/hat-open.wav',
+      chat:'audio/Roland TR-909/hat-closed.wav'
     },
     trap1: {
       kick:'audio/TRAP1/trap-kick.WAV',
-      snare:'audio/TRAP1/Trapaholic Snare (7).WAV',
+      snare:'audio/TRAP1/trap-1-snare.WAV',
       ohat:'audio/TRAP1/trap-ride.wav',
       chat:'audio/TRAP1/Trap Chant.wav'
     },
     trap2: {
       kick:'audio/TRAP2/trap-kick.wav',
-      snare:'audio/TRAP2/DT - Snare14.WAV',
-      ohat:'audio/TRAP2/Open Hat.wav',
+      snare:'audio/TRAP2/trap-2-snare.WAV',
+      ohat:'audio/TRAP2/trap-2-ohat.wav',
       chat:'audio/TRAP2/Hat_Closed_02.wav'
     },
     trap3: {
