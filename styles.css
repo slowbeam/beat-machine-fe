@@ -114,7 +114,7 @@ h4 {
     width: 40px;
     height: 50px;
 
-    background: url('src/svg/buttons/status-light.svg');
+    background: url('https://cdn.rawgit.com/slowbeam/d24f18e09a0bd0841a4a8e77b010182e/raw/595663586e59a71cdbb1d37135a2364281e84df4/beat-machine-status-light.svg');
     background-size: 42px 75px;
     background-repeat: no-repeat;
 
@@ -124,7 +124,7 @@ h4 {
     width: 40px;
     height: 50px;
 
-    background: url('src/svg/buttons/status-light-lit-red.svg');
+    background: url('https://cdn.rawgit.com/slowbeam/3add235538db3ef5449617450db0b2f8/raw/5a49bcf27c6b03372e352cd2e19c7c49c6eed86f/beat-machine-status-light-lit.svg');
     background-size: 42px 75px;
     background-repeat: no-repeat;
 
@@ -137,7 +137,7 @@ h4 {
 .magenta-button {
   min-height: 75px;
   min-width: 42px;
-  background: url('src/svg/buttons/button-magenta-dark.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/145b3136f9561d64197aee694bd1eb58/raw/4f63f7ee459748ab4856211b5310ce5f4cd0ea96/beat-machine-button-magenta-dark.svg');
   background-size: 42px 75px;
   background-repeat: no-repeat;
 }
@@ -145,7 +145,7 @@ h4 {
 .magenta-button-lit {
   min-height: 75px;
   min-width: 42px;
-  background: url('src/svg/buttons/button-magenta-lit.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/b67b642c55fcf85c712acf3c0e8086d6/raw/06c70e119d475cfe1282822f5bb31548e58f714d/beat-machine-button-magenta-lit.svg');
   background-size: 42px 75px;
   background-repeat: no-repeat;
 }
@@ -153,7 +153,7 @@ h4 {
 .purple-button {
   min-height: 75px;
   min-width: 42px;
-  background: url('src/svg/buttons/button-purple-dark.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/349027d691475d1949a325fed9bd3e0d/raw/d74499d7827b0105e6b666187811e2f9172469b7/beat-machine-button-purple-dark.svg');
   background-size: 42px 75px;
   background-repeat: no-repeat;
 }
@@ -161,7 +161,7 @@ h4 {
 .purple-button-lit {
   min-height: 75px;
   min-width: 42px;
-  background: url('src/svg/buttons/button-purple-lit.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/de32046165d9f881ebe0cf29e45e2bb2/raw/d57af59b6531ce1afa30c58d2397fe2da1494db9/beat-machine-button-purple-lit.svg');
   background-size: 42px 75px;
   background-repeat: no-repeat;
 }
@@ -169,7 +169,7 @@ h4 {
 .green-button {
   min-height: 75px;
   min-width: 42px;
-  background: url('src/svg/buttons/button-green-dark.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/b1d34d910463890fb0d650b250ce96d4/raw/7dac543f449230aee255baffae3e72d34f84ede1/beat-machine-button-green-dark.svg');
   background-size: 42px 75px;
   background-repeat: no-repeat;
 }
@@ -177,7 +177,7 @@ h4 {
 .green-button-lit {
   min-height: 75px;
   min-width: 42px;
-  background: url('src/svg/buttons/button-green-lit.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/830e378cdbb06c6c089919944422887e/raw/a428c007751c099b81ced63fb27af7934cc4fb30/beat-machine-button-green-lit.svg');
   background-size: 42px 75px;
   background-repeat: no-repeat;
 }
@@ -193,7 +193,7 @@ h4 {
 .blue-button-lit {
   min-height: 75px;
   min-width: 42px;
-  background: url('src/svg/buttons/button-blue-lit.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/dc52705dd6587ef92c6f47bcf6947214/raw/a41f702c7e208e49caa2e331155209bc1200c3ab/beat-machine-button-blue-lit.svg');
   background-size: 42px 75px;
   background-repeat: no-repeat;
 }
@@ -220,7 +220,7 @@ h4 {
 
   height: 75px;
   width: 75px;
-  background: url('src/svg/buttons/button-play.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/e5849c45da5827229d1e29ee8b30f436/raw/45c19f1bd65ed1f1cdc3a8a99b6f86c420b385fa/beat-machine-button-play.svg');
   background-repeat: no-repeat;
   background-position: center;
 
@@ -230,7 +230,7 @@ h4 {
 
   height: 75px;
   width: 75px;
-  background: url('src/svg/buttons/button-play-lit.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/1c8ec0ef10c5329924a9d8fbd2e7a0f0/raw/c65cd1523ff316b2065535093fe43e0e10847811/beat-machine-button-play-lit.svg');
   background-repeat: no-repeat;
   background-position: center;
 
@@ -240,7 +240,7 @@ h4 {
 
   height: 75px;
   width: 75px;
-  background: url('src/svg/buttons/button-stop.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/12f779711cf2d1c7389bdeaf7071e1c6/raw/a7c852c42c1a77ea89660369fea841794f04899e/beat-machine-button-stop.svg');
   background-repeat: no-repeat;
   background-position: center;
 
@@ -250,7 +250,7 @@ h4 {
 
   height: 75px;
   width: 75px;
-  background: url('src/svg/buttons/button-stop-lit.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/4c17d46adca1d718ddf9db4763107588/raw/c72c274dc3a3cc30e2b8f5e3028e6bd463450e20/beat-machine-button-stop-lit.svg');
   background-repeat: no-repeat;
   background-position: center;
 
@@ -260,7 +260,7 @@ h4 {
 
   height: 28px;
   width: 100px;
-  background: url('src/svg/buttons/button-tempo-up.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/3ca405160bb843ea619204bad350bbf1/raw/003b5c7c3ec9973eaa7779e4d0cc5531cd2c0381/beat-machine-tempo-up.svg');
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
@@ -271,7 +271,7 @@ h4 {
 
   height: 28px;
   width: 100px;
-  background: url('src/svg/buttons/button-tempo-up-lit.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/9bdaf36930b51821036c9319d2770da5/raw/5beee8bb959fb0adf1761bc71be81f244e68ff1e/beat-machine-button-tempo-up-lit.svg');
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
@@ -281,7 +281,7 @@ h4 {
 
   height: 28px;
   width: 100px;
-  background: url('src/svg/buttons/button-tempo-down.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/454b5ad300c06e46e634464ef97f634e/raw/d41919300bfe57472c29f533b09beb3bf294b576/beat-machine-button-tempo-down.svg');
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
@@ -292,7 +292,7 @@ h4 {
 
   height: 28px;
   width: 100px;
-  background: url('src/svg/buttons/button-tempo-down-lit.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/99bf6ced0e7590e04535bd0844f026c4/raw/5fb2cffe754f6928f3cdbfefc0dd5633cd276abe/beat-machine-button-tempo-down-lit.svg');
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
@@ -303,7 +303,7 @@ h4 {
 
   height: 28px;
   width: 100px;
-  background: url('src/svg/buttons/button-tempo-up.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/3ca405160bb843ea619204bad350bbf1/raw/003b5c7c3ec9973eaa7779e4d0cc5531cd2c0381/beat-machine-tempo-up.svg');
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
@@ -314,7 +314,7 @@ h4 {
 
   height: 28px;
   width: 100px;
-  background: url('src/svg/buttons/button-tempo-up-lit.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/9bdaf36930b51821036c9319d2770da5/raw/5beee8bb959fb0adf1761bc71be81f244e68ff1e/beat-machine-button-tempo-up-lit.svg');
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
@@ -325,7 +325,7 @@ h4 {
 
   height: 28px;
   width: 100px;
-  background: url('src/svg/buttons/button-tempo-down.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/454b5ad300c06e46e634464ef97f634e/raw/d41919300bfe57472c29f533b09beb3bf294b576/beat-machine-button-tempo-down.svg');
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
@@ -335,7 +335,7 @@ h4 {
 
   height: 28px;
   width: 100px;
-  background: url('src/svg/buttons/button-tempo-down-lit.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/99bf6ced0e7590e04535bd0844f026c4/raw/5fb2cffe754f6928f3cdbfefc0dd5633cd276abe/beat-machine-button-tempo-down-lit.svg');
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
@@ -427,7 +427,7 @@ input[type=submit] {
   height: 58px;
   font-family: "antipasto";
   font-size: 30px;
-  background: url('src/svg/buttons/button-wide.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/b5d114d94b8f579bf06d54a5ff294c99/raw/7c692a182dd6acde6ae16b6b842848e125f8f0e0/beat-machine-button-wide.svg');
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -448,7 +448,7 @@ input[type=submit]:hover {
       height: 58px;
       font-family: "antipasto";
       font-size: 30px;
-      background: url('svg/buttons/button-wide.svg');
+      background: url('https://cdn.rawgit.com/slowbeam/b5d114d94b8f579bf06d54a5ff294c99/raw/7c692a182dd6acde6ae16b6b842848e125f8f0e0/beat-machine-button-wide.svg');
       background-repeat: no-repeat;
       background-position: center;
       border: none;
