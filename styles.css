@@ -1,0 +1,497 @@
+
+
+body {
+  background-color:   #fff0dd;
+  font-family: "antipasto";
+}
+
+@font-face {
+    font-family: "antipasto";
+    src: url("fonts/antipastopro-demibold-webfont.woff");
+
+}
+
+p {
+  font-size: 13px;
+}
+
+h1 {
+  text-align: right;
+  color:  white;
+  font-size: 50px;
+}
+
+h4 {
+  display: inline;
+}
+
+#playback-controls {
+  text-align: center;
+}
+
+#playback-controls button {
+  padding: 10px;
+}
+
+.inst-button {
+    background-color: #4CAF50;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 20px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px;
+}
+
+.inst-title {
+  align-self: center;
+  justify-self: left;
+}
+
+.button-row {
+  min-width: 940px;
+}
+
+.kick {
+  background-color: #9c83e8;
+}
+
+.snare {
+  background-color: #ff6666;
+}
+
+.openhat {
+  background-color:  #00e6ac;
+}
+
+.closedhat {
+  background-color:  #4db8ff;
+}
+
+.button-wrapper {
+  min-height: 75px /*missing semicolon */
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5px;
+  display: grid;
+  grid-template-columns: 60px repeat(16, 1fr)
+}
+
+.wrapper {
+  margin: 0px auto;
+  height: 900px;
+  width: 1600px;
+  background: url('svg/buttons/beat-machine-bkg-18.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.buttons {
+  float: right;
+  padding-right: 10%;
+  margin 0px auto;
+  width: 1100px;
+  padding-top: 0%;
+
+}
+
+#buttons {
+  margin-left: 400px;
+}
+
+#app-title {
+  visibility: hidden;
+  padding-top: 85px;
+  padding-right: 258px;
+  padding-bottom: 0px;
+}
+
+.status-light {
+    width: 40px;
+    height: 50px;
+
+    background: url('svg/buttons/status-light.svg');
+    background-size: 42px 75px;
+    background-repeat: no-repeat;
+
+}
+
+.status-light-lit {
+    width: 40px;
+    height: 50px;
+
+    background: url('svg/buttons/status-light-lit-red.svg');
+    background-size: 42px 75px;
+    background-repeat: no-repeat;
+
+}
+
+.svg-button {
+  box-sizing: border-box;
+}
+
+.magenta-button {
+  min-height: 75px;
+  min-width: 42px;
+  background: url('svg/buttons/button-magenta-dark.svg');
+  background-size: 42px 75px;
+  background-repeat: no-repeat;
+}
+
+.magenta-button-lit {
+  min-height: 75px;
+  min-width: 42px;
+  background: url('svg/buttons/button-magenta-lit.svg');
+  background-size: 42px 75px;
+  background-repeat: no-repeat;
+}
+
+.purple-button {
+  min-height: 75px;
+  min-width: 42px;
+  background: url('svg/buttons/button-purple-dark.svg');
+  background-size: 42px 75px;
+  background-repeat: no-repeat;
+}
+
+.purple-button-lit {
+  min-height: 75px;
+  min-width: 42px;
+  background: url('svg/buttons/button-purple-lit.svg');
+  background-size: 42px 75px;
+  background-repeat: no-repeat;
+}
+
+.green-button {
+  min-height: 75px;
+  min-width: 42px;
+  background: url('svg/buttons/button-green-dark.svg');
+  background-size: 42px 75px;
+  background-repeat: no-repeat;
+}
+
+.green-button-lit {
+  min-height: 75px;
+  min-width: 42px;
+  background: url('svg/buttons/button-green-lit.svg');
+  background-size: 42px 75px;
+  background-repeat: no-repeat;
+}
+
+.blue-button {
+  min-height: 75px;
+  min-width: 42px;
+  background: url('svg/buttons/button-blue-dark.svg');
+  background-size: 42px 75px;
+  background-repeat: no-repeat;
+}
+
+.blue-button-lit {
+  min-height: 75px;
+  min-width: 42px;
+  background: url('svg/buttons/button-blue-lit.svg');
+  background-size: 42px 75px;
+  background-repeat: no-repeat;
+}
+
+
+.control-panel-container {
+  margin-top: 519px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.control-buttons {
+
+  margin-left: -16px;
+  width: 580px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.play-button {
+
+  height: 75px;
+  width: 75px;
+  background: url('svg/buttons/button-play.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.play-button-lit {
+
+  height: 75px;
+  width: 75px;
+  background: url('svg/buttons/button-play-lit.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.stop-button {
+
+  height: 75px;
+  width: 75px;
+  background: url('svg/buttons/button-stop.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.stop-button-lit {
+
+  height: 75px;
+  width: 75px;
+  background: url('svg/buttons/button-stop-lit.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.tempo-up-button {
+
+  height: 28px;
+  width: 100px;
+  background: url('svg/buttons/button-tempo-up.svg');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tempo-up-button-lit {
+
+
+  height: 28px;
+  width: 100px;
+  background: url('svg/buttons/button-tempo-up-lit.svg');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tempo-down-button {
+
+  height: 28px;
+  width: 100px;
+  background: url('svg/buttons/button-tempo-down.svg');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tempo-down-button-lit {
+
+
+  height: 28px;
+  width: 100px;
+  background: url('svg/buttons/button-tempo-down-lit.svg');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.shuffle-up-button {
+
+
+  height: 28px;
+  width: 100px;
+  background: url('svg/buttons/button-tempo-up.svg');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.shuffle-up-button-lit {
+
+
+  height: 28px;
+  width: 100px;
+  background: url('svg/buttons/button-tempo-up-lit.svg');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.shuffle-down-button {
+
+  height: 28px;
+  width: 100px;
+  background: url('svg/buttons/button-tempo-down.svg');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.shuffle-down-button-lit {
+
+  height: 28px;
+  width: 100px;
+  background: url('svg/buttons/button-tempo-down-lit.svg');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tempo-container {
+  height: 60px;
+  width: 110px;
+  align-self: center;
+}
+
+.shuffle-container {
+  height: 60px;
+  width: 110px;
+  align-self: center;
+}
+
+.tempo {
+
+  display: flex;
+  margin-top: 20px
+  height: 68px;
+  width: 250px;
+  align-content: center;
+  justify-content: space-around;
+
+}
+
+.tempo-up-down {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.shuffle {
+
+  display: flex;
+  margin-top: 20px
+  height: 68px;
+  width: 220px;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.shuffle-up-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.digital-screen {
+
+       display: inline-block;
+       background-color: Black;
+       border-radius: 10px;
+       margin-left: 12px;
+   }
+
+.save-container {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.save-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 1200px;
+  background: url('svg/buttons/beat-machine-save-area-2.svg');
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-container {
+  margin-top: 60px;
+  width: 980px;
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type=submit] {
+  width: 140px;
+  height: 58px;
+  font-family: "antipasto";
+  font-size: 30px;
+  background: url('svg/buttons/button-wide.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  color: white;
+  transition: .1s;
+  transform: scale(1);
+
+}
+
+input[type=submit]:hover {
+  transition: .1s;
+  transform: scale(1.02);
+}
+
+#clear-button {
+      margin-left: 30px;
+      width: 140px;
+      height: 58px;
+      font-family: "antipasto";
+      font-size: 30px;
+      background: url('svg/buttons/button-wide.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      border: none;
+      color: white;
+      transition: .1s;
+      transform: scale(1);
+}
+
+#clear-button:hover {
+  transition: .1s;
+  transform: scale(1.02);
+}
+
+
+input[type="text"]{
+    font-family: "antipasto";
+    font-size:28px;
+    width: 200px;
+    height: 35px;
+    color: #7676a2;
+    background-color: #efeff4;
+}
+
+.new-beat-form-container {
+  text-align: center;
+}
+
+.beat-selector-container {
+  text-align: center;
+}
+
+select {
+  font-family: "antipasto";
+  font-size: 28px;
+  height: 40px;
+  background-color:  #efeff4;
+  color: #7676a2;
+}
+
+.drumkit-load-container {
+  display: flex;
+  align-items: center;
+  margin-left: 280px;
+  margin-top: -100px;
+  margin-bottom: 40px;
+}
