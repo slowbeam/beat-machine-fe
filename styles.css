@@ -185,7 +185,7 @@ h4 {
 .blue-button {
   min-height: 75px;
   min-width: 42px;
-  background: url('src/svg/buttons/button-blue-dark.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/08465a6e2279024a53f4fa9a50f595ae/raw/90684825fb262548a44b7294390f3b8ee58f381b/beat-machine-button-blue-dark.svg');
   background-size: 42px 75px;
   background-repeat: no-repeat;
 }
@@ -409,7 +409,7 @@ h4 {
   align-items: center;
   height: 500px;
   width: 1200px;
-  background: url('src/svg/buttons/beat-machine-save-area-2.svg');
+  background: url('https://cdn.rawgit.com/slowbeam/f5efaf96b7b53c8165c4635a6eb71e61/raw/5dbcee163f0a45b96c20e4b794c14107e2b4162c/beat-machine-save-area.svg');
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
