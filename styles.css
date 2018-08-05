@@ -11,6 +11,10 @@ body {
 
 }
 
+.onload-images {
+  visibility: hidden;
+}
+
 p {
   font-size: 13px;
 }

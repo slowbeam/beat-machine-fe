@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Beat-Machine</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
-    <script src="sevenSeg.js"></script>
-    <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
-    <script type="text/javascript" src="models.js"></script>
-    <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="scripts.js"></script>
-    <link rel=icon href=/src/favicon/beat-machine-favicon.png>
-  </head>
-  <body>
-    <div id="main-container">
+
+<head>
+  <meta charset="utf-8">
+  <title>Beat-Machine</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
+  <script src="sevenSeg.js"></script>
+  <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+  <script type="text/javascript" src="models.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+  <link rel=icon href=/src/favicon/beat-machine-favicon.png>
+</head>
+
+<body>
+  <div id="main-container">
 
 
-      <div class="svg-beat-machine">
+    <div class="svg-beat-machine">
+    </div>
+
+
+
+    <div class="wrapper">
+
+
+
+      <div id="app-title">
+        <h1>Beat-Machine</h1>
       </div>
 
+      <div class="drumkit-load-container">
 
-
-      <div class="wrapper">
-
-
-
-        <div id="app-title">
-          <h1>Beat-Machine</h1>
-        </div>
-
-        <div class="drumkit-load-container">
-
-          <form class="drumkit-select-form" action="index.html">
+        <form class="drumkit-select-form" action="index.html">
           <select class="drumkit-selector" id="drumkit-menu">
             <optgroup label="DrumKits">
               <option value="tr808">TR808</option>
@@ -45,369 +47,395 @@
             </optgroup>
           </select>
           <input type="submit" name="" value="load" id="load-drumkit">
-          </form>
+        </form>
 
-          <button id="clear-button" data-action="clear" name="button">clear</button>
+        <button id="clear-button" data-action="clear" name="button">clear</button>
 
-        </div>
+      </div>
 
-        <div class="buttons">
+      <div class="buttons">
 
-          <div class="button-row" id="lights">
-            <div class="button-wrapper">
-              <div class="empty">
-
-              </div>
-
-              <div id="status-light-1" class="status-light">
-              </div>
-              <div id="status-light-2" class="status-light">
-              </div>
-              <div id="status-light-3" class="status-light">
-              </div>
-              <div id="status-light-4" class="status-light">
-              </div>
-              <div id="status-light-5" class="status-light">
-              </div>
-              <div id="status-light-6" class="status-light">
-              </div>
-              <div id="status-light-7" class="status-light">
-              </div>
-              <div id="status-light-8" class="status-light">
-              </div>
-              <div id="status-light-9" class="status-light">
-              </div>
-              <div id="status-light-10" class="status-light">
-              </div>
-              <div id="status-light-11" class="status-light">
-              </div>
-              <div id="status-light-12" class="status-light">
-              </div>
-              <div id="status-light-13" class="status-light">
-              </div>
-              <div id="status-light-14" class="status-light">
-              </div>
-              <div id="status-light-15" class="status-light">
-              </div>
-              <div id="status-light-16" class="status-light">
-              </div>
-
-            </div>
-          </div>
-
-          <div class="button-row" id="kick">
-
-            <div class="button-wrapper">
-              <div class="inst-title">
-
-              </div>
-
-              <div data-action="kick-1" id="kick-1" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-2" id="kick-2" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-3" id="kick-3" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-4" id="kick-4" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-5" id="kick-5" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-6" id="kick-6" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-7" id="kick-7" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-8" id="kick-8" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-9" id="kick-9" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-10" id="kick-10" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-11" id="kick-11" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-12" id="kick-12" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-13" id="kick-13" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-14" id="kick-14" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-15" id="kick-15" class="sequencer-button purple-button">
-              </div>
-
-              <div data-action="kick-16" id="kick-16" class="sequencer-button purple-button">
-              </div>
+        <div class="button-row" id="lights">
+          <div class="button-wrapper">
+            <div class="empty">
 
             </div>
 
-          </div>
-
-          <div class="button-row" id="snare">
-
-            <div class="button-wrapper">
-              <div class="inst-title">
-
-              </div>
-
-              <div data-action="snare-1" id="snare-1" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-2" id="snare-2" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-3" id="snare-3" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-4" id="snare-4" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-5" id="snare-5" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-6" id="snare-6" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-7" id="snare-7" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-8" id="snare-8" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-9" id="snare-9" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-10" id="snare-10" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-11" id="snare-11" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-12" id="snare-12" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-13" id="snare-13" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-14" id="snare-14" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-15" id="snare-15" class="sequencer-button magenta-button">
-              </div>
-
-              <div data-action="snare-16" id="snare-16" class="sequencer-button magenta-button">
-              </div>
-
-
+            <div id="status-light-1" class="status-light">
             </div>
-
-          </div>
-
-          <div class="button-row" id="open-hi-hat">
-            <div class="button-wrapper">
-              <div class="inst-title">
-
-              </div>
-
-              <div data-action="ohat-1" id="ohat-1" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-2" id="ohat-2" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-3" id="ohat-3" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-4" id="ohat-4" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-5" id="ohat-5" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-6" id="ohat-6" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-7" id="ohat-7" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-8" id="ohat-8" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-9" id="ohat-9" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-10" id="ohat-10" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-11" id="ohat-11" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-12" id="ohat-12" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-13" id="ohat-13" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-14" id="ohat-14" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-15" id="ohat-15" class="sequencer-button green-button">
-              </div>
-
-              <div data-action="ohat-16" id="ohat-16" class="sequencer-button green-button">
-              </div>
-
+            <div id="status-light-2" class="status-light">
             </div>
-          </div>
-
-          <div class="button-row" id="closed-hi-hat">
-
-            <div class="button-wrapper">
-              <div class="inst-title">
-
-              </div>
-
-              <div data-action="chat-1" id="chat-1" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-2" id="chat-2" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-3" id="chat-3" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-4" id="chat-4" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-5" id="chat-5" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-6" id="chat-6" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-7" id="chat-7" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-8" id="chat-8" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-9" id="chat-9" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-10" id="chat-10" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-11" id="chat-11" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-12" id="chat-12" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-13" id="chat-13" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-14" id="chat-14" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-15" id="chat-15" class="sequencer-button blue-button">
-              </div>
-
-              <div data-action="chat-16" id="chat-16" class="sequencer-button blue-button">
-              </div>
-
+            <div id="status-light-3" class="status-light">
             </div>
-          </div>
-        </div>
-
-
-        <div class="control-panel-container">
-
-          <div class="control-buttons">
-            <div data-action="play" id="play-button" class="play-button">
+            <div id="status-light-4" class="status-light">
             </div>
-
-            <div data-action="stop" id="stop-button" class="stop-button-lit">
+            <div id="status-light-5" class="status-light">
             </div>
-
-            <div class="tempo">
-              <div class="tempo-up-down">
-                <div data-action="tempo-up" id="tempo-up-button" class="tempo-up-button"></div>
-                <div data-action="tempo-down" id="tempo-down-button" class="tempo-down-button"></div>
-              </div>
-
-              <div class="tempo-container digital-screen" id="tempo-screen"></div>
+            <div id="status-light-6" class="status-light">
             </div>
-
-
-
-            <div class="shuffle">
-              <div class="shuffle-up-down">
-                <div data-action="shuffle-up" id="shuffle-up-button" class="shuffle-up-button"></div>
-
-                <div data-action="shuffle-down" id="shuffle-down-button" class="shuffle-down-button"></div>
-              </div>
-
-              <div class="shuffle-container digital-screen" id="shuffle-screen"></div>
+            <div id="status-light-7" class="status-light">
+            </div>
+            <div id="status-light-8" class="status-light">
+            </div>
+            <div id="status-light-9" class="status-light">
+            </div>
+            <div id="status-light-10" class="status-light">
+            </div>
+            <div id="status-light-11" class="status-light">
+            </div>
+            <div id="status-light-12" class="status-light">
+            </div>
+            <div id="status-light-13" class="status-light">
+            </div>
+            <div id="status-light-14" class="status-light">
+            </div>
+            <div id="status-light-15" class="status-light">
+            </div>
+            <div id="status-light-16" class="status-light">
             </div>
 
           </div>
         </div>
 
-        <div class="save-container">
-          <div class="save-area">
+        <div class="button-row" id="kick">
 
-            <div class="form-container">
+          <div class="button-wrapper">
+            <div class="inst-title">
 
-              <div class="beat-selector-container">
+            </div>
 
-                <form class="beat-select-form" action="index.html" method="post">
+            <div data-action="kick-1" id="kick-1" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-2" id="kick-2" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-3" id="kick-3" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-4" id="kick-4" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-5" id="kick-5" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-6" id="kick-6" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-7" id="kick-7" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-8" id="kick-8" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-9" id="kick-9" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-10" id="kick-10" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-11" id="kick-11" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-12" id="kick-12" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-13" id="kick-13" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-14" id="kick-14" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-15" id="kick-15" class="sequencer-button purple-button">
+            </div>
+
+            <div data-action="kick-16" id="kick-16" class="sequencer-button purple-button">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="button-row" id="snare">
+
+          <div class="button-wrapper">
+            <div class="inst-title">
+
+            </div>
+
+            <div data-action="snare-1" id="snare-1" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-2" id="snare-2" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-3" id="snare-3" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-4" id="snare-4" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-5" id="snare-5" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-6" id="snare-6" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-7" id="snare-7" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-8" id="snare-8" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-9" id="snare-9" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-10" id="snare-10" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-11" id="snare-11" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-12" id="snare-12" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-13" id="snare-13" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-14" id="snare-14" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-15" id="snare-15" class="sequencer-button magenta-button">
+            </div>
+
+            <div data-action="snare-16" id="snare-16" class="sequencer-button magenta-button">
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="button-row" id="open-hi-hat">
+          <div class="button-wrapper">
+            <div class="inst-title">
+
+            </div>
+
+            <div data-action="ohat-1" id="ohat-1" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-2" id="ohat-2" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-3" id="ohat-3" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-4" id="ohat-4" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-5" id="ohat-5" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-6" id="ohat-6" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-7" id="ohat-7" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-8" id="ohat-8" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-9" id="ohat-9" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-10" id="ohat-10" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-11" id="ohat-11" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-12" id="ohat-12" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-13" id="ohat-13" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-14" id="ohat-14" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-15" id="ohat-15" class="sequencer-button green-button">
+            </div>
+
+            <div data-action="ohat-16" id="ohat-16" class="sequencer-button green-button">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="button-row" id="closed-hi-hat">
+
+          <div class="button-wrapper">
+            <div class="inst-title">
+
+            </div>
+
+            <div data-action="chat-1" id="chat-1" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-2" id="chat-2" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-3" id="chat-3" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-4" id="chat-4" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-5" id="chat-5" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-6" id="chat-6" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-7" id="chat-7" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-8" id="chat-8" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-9" id="chat-9" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-10" id="chat-10" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-11" id="chat-11" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-12" id="chat-12" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-13" id="chat-13" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-14" id="chat-14" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-15" id="chat-15" class="sequencer-button blue-button">
+            </div>
+
+            <div data-action="chat-16" id="chat-16" class="sequencer-button blue-button">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="control-panel-container">
+
+        <div class="control-buttons">
+          <div data-action="play" id="play-button" class="play-button">
+          </div>
+
+          <div data-action="stop" id="stop-button" class="stop-button-lit">
+          </div>
+
+          <div class="tempo">
+            <div class="tempo-up-down">
+              <div data-action="tempo-up" id="tempo-up-button" class="tempo-up-button"></div>
+              <div data-action="tempo-down" id="tempo-down-button" class="tempo-down-button"></div>
+            </div>
+
+            <div class="tempo-container digital-screen" id="tempo-screen"></div>
+          </div>
+
+
+
+          <div class="shuffle">
+            <div class="shuffle-up-down">
+              <div data-action="shuffle-up" id="shuffle-up-button" class="shuffle-up-button"></div>
+
+              <div data-action="shuffle-down" id="shuffle-down-button" class="shuffle-down-button"></div>
+            </div>
+
+            <div class="shuffle-container digital-screen" id="shuffle-screen"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="save-container">
+        <div class="save-area">
+
+          <div class="form-container">
+
+            <div class="beat-selector-container">
+
+              <form class="beat-select-form" action="index.html" method="post">
                 <select class="beat-selector">
                   <optgroup id="beat-options" label="beat-options">
 
                   </optgroup>
                 </select><br><br>
                 <input type="submit" data-action="load-beat" value="load">
-                </form>
+              </form>
 
-              </div>
-
-              <div class="new-beat-form-container">
-
-                <form class="new-form" action="index.html" method="post">
-                  <input id="beat-name" type="text" name="" placeholder="enter a name"><br><br>
-                  <input type="submit" data-action="save-beat" value="save">
-
-                </form>
-              </div>
             </div>
 
+            <div class="new-beat-form-container">
 
+              <form class="new-form" action="index.html" method="post">
+                <input id="beat-name" type="text" name="" placeholder="enter a name"><br><br>
+                <input type="submit" data-action="save-beat" value="save">
+
+              </form>
+            </div>
           </div>
+
 
         </div>
 
       </div>
 
-
     </div>
 
 
+  </div>
+
+  <div class="onload-images">
+    <img src="https://cdn.rawgit.com/slowbeam/469e2095801331d379f5589548aa7880/raw/601c003cdb1f6ca9ae7cd90f133cb6da89da5134/beat-machine-bkg.svg
+    ">
+    <img src="https://cdn.rawgit.com/slowbeam/d24f18e09a0bd0841a4a8e77b010182e/raw/595663586e59a71cdbb1d37135a2364281e84df4/beat-machine-status-light.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/3add235538db3ef5449617450db0b2f8/raw/5a49bcf27c6b03372e352cd2e19c7c49c6eed86f/beat-machine-status-light-lit.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/145b3136f9561d64197aee694bd1eb58/raw/4f63f7ee459748ab4856211b5310ce5f4cd0ea96/beat-machine-button-magenta-dark.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/b67b642c55fcf85c712acf3c0e8086d6/raw/06c70e119d475cfe1282822f5bb31548e58f714d/beat-machine-button-magenta-lit.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/349027d691475d1949a325fed9bd3e0d/raw/d74499d7827b0105e6b666187811e2f9172469b7/beat-machine-button-purple-dark.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/de32046165d9f881ebe0cf29e45e2bb2/raw/d57af59b6531ce1afa30c58d2397fe2da1494db9/beat-machine-button-purple-lit.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/b1d34d910463890fb0d650b250ce96d4/raw/7dac543f449230aee255baffae3e72d34f84ede1/beat-machine-button-green-dark.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/830e378cdbb06c6c089919944422887e/raw/a428c007751c099b81ced63fb27af7934cc4fb30/beat-machine-button-green-lit.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/08465a6e2279024a53f4fa9a50f595ae/raw/90684825fb262548a44b7294390f3b8ee58f381b/beat-machine-button-blue-dark.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/dc52705dd6587ef92c6f47bcf6947214/raw/a41f702c7e208e49caa2e331155209bc1200c3ab/beat-machine-button-blue-lit.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/e5849c45da5827229d1e29ee8b30f436/raw/45c19f1bd65ed1f1cdc3a8a99b6f86c420b385fa/beat-machine-button-play.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/1c8ec0ef10c5329924a9d8fbd2e7a0f0/raw/c65cd1523ff316b2065535093fe43e0e10847811/beat-machine-button-play-lit.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/12f779711cf2d1c7389bdeaf7071e1c6/raw/a7c852c42c1a77ea89660369fea841794f04899e/beat-machine-button-stop.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/4c17d46adca1d718ddf9db4763107588/raw/c72c274dc3a3cc30e2b8f5e3028e6bd463450e20/beat-machine-button-stop-lit.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/3ca405160bb843ea619204bad350bbf1/raw/003b5c7c3ec9973eaa7779e4d0cc5531cd2c0381/beat-machine-tempo-up.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/9bdaf36930b51821036c9319d2770da5/raw/5beee8bb959fb0adf1761bc71be81f244e68ff1e/beat-machine-button-tempo-up-lit.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/454b5ad300c06e46e634464ef97f634e/raw/d41919300bfe57472c29f533b09beb3bf294b576/beat-machine-button-tempo-down.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/99bf6ced0e7590e04535bd0844f026c4/raw/5fb2cffe754f6928f3cdbfefc0dd5633cd276abe/beat-machine-button-tempo-down-lit.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/f5efaf96b7b53c8165c4635a6eb71e61/raw/5dbcee163f0a45b96c20e4b794c14107e2b4162c/beat-machine-save-area.svg">
+    <img src="https://cdn.rawgit.com/slowbeam/b5d114d94b8f579bf06d54a5ff294c99/raw/7c692a182dd6acde6ae16b6b842848e125f8f0e0/beat-machine-button-wide.svg">
+  </div>
 
 
 
 
 
 
-  </body>
+
+
+</body>
+
 </html>
