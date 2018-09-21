@@ -422,12 +422,17 @@ h4 {
   align-items: center;
 }
 
+.drumkit-select-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 input[type=submit] {
   width: 85px;
   height: 35px;
   font-family: "antipasto";
   font-size: 17px;
-  margin-top: -20px;
   background: url('https://cdn.rawgit.com/slowbeam/b5d114d94b8f579bf06d54a5ff294c99/raw/7c692a182dd6acde6ae16b6b842848e125f8f0e0/beat-machine-button-wide.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -444,7 +449,6 @@ input[type=submit]:hover {
 }
 
 #clear-button {
-      margin-left: 10px;
       width:85px;
       height: 35px;
       font-family: "antipasto";
