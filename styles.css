@@ -1,11 +1,8 @@
-html {
-  height: 50%;
-}
+
 
 body {
   background-color:   #fff0dd;
   font-family: "antipasto";
-  min-height: 100%;
 }
 
 @font-face {
@@ -15,7 +12,8 @@ body {
 }
 
 .onload-images {
-  visibility: hidden;
+  display: none;
+
 }
 
 p {
@@ -119,7 +117,6 @@ h4 {
 .status-light {
     width: 25px;
     height: 25px;
-
     background: url('https://cdn.rawgit.com/slowbeam/d24f18e09a0bd0841a4a8e77b010182e/raw/595663586e59a71cdbb1d37135a2364281e84df4/beat-machine-status-light.svg');
     background-size: 25px 25px;
     background-repeat: no-repeat;
@@ -129,7 +126,6 @@ h4 {
 .status-light-lit {
     width: 25px;
     height: 25px;
-
     background: url('https://cdn.rawgit.com/slowbeam/3add235538db3ef5449617450db0b2f8/raw/5a49bcf27c6b03372e352cd2e19c7c49c6eed86f/beat-machine-status-light-lit.svg');
     background-size: 25px 25px;
     background-repeat: no-repeat;
@@ -409,19 +405,21 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  width: 1200px;
+  height: 300px;
+  width: 800px;
+  margin-left: -20px;
   background: url('https://cdn.rawgit.com/slowbeam/f5efaf96b7b53c8165c4635a6eb71e61/raw/5dbcee163f0a45b96c20e4b794c14107e2b4162c/beat-machine-save-area.svg');
-  background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .form-container {
-  margin-top: 60px;
-  width: 980px;
+  margin-top: 45px;
+  width: 600px;
+  margin-left: 10px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 input[type=submit] {
@@ -429,6 +427,7 @@ input[type=submit] {
   height: 35px;
   font-family: "antipasto";
   font-size: 17px;
+  margin-top: -20px;
   background: url('https://cdn.rawgit.com/slowbeam/b5d114d94b8f579bf06d54a5ff294c99/raw/7c692a182dd6acde6ae16b6b842848e125f8f0e0/beat-machine-button-wide.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -467,9 +466,9 @@ input[type=submit]:hover {
 
 input[type="text"]{
     font-family: "antipasto";
-    font-size:28px;
+    font-size: 17px;
     width: 200px;
-    height: 35px;
+    height: 22px;
     color: #7676a2;
     background-color: #efeff4;
 }
@@ -496,4 +495,9 @@ select {
   align-items: center;
   margin-left: 185px;
   margin-top: -130px;
+}
+
+form.new-form {
+  margin-left: -15px;
+
 }
