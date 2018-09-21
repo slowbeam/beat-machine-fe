@@ -1,8 +1,11 @@
-
+html {
+  height: 50%;
+}
 
 body {
   background-color:   #fff0dd;
   font-family: "antipasto";
+  min-height: 100%;
 }
 
 @font-face {
@@ -75,37 +78,36 @@ h4 {
   background-color:  #4db8ff;
 }
 
+.buttons {
+  margin-left: 159px;
+  margin-top: 32px;
+}
+
 .button-wrapper {
-  min-height: 75px /*missing semicolon */
+  min-height: 25px;
+  width: 560px;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 5px;
   display: grid;
-  grid-template-columns: 60px repeat(16, 1fr)
+  grid-template-columns: 10px repeat(16, 1fr)
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
 }
 
 .wrapper {
-  margin: 0px auto;
-  height: 900px;
-  width: 1600px;
+
+  height: 563px;
+  width: 1000px;
   background: url('https://cdn.rawgit.com/slowbeam/469e2095801331d379f5589548aa7880/raw/601c003cdb1f6ca9ae7cd90f133cb6da89da5134/beat-machine-bkg.svg');
-  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.buttons {
-  float: right;
-  padding-right: 10%;
-  margin 0px auto;
-  width: 1100px;
-  padding-top: 0%;
-
-}
-
-#buttons {
-  margin-left: 400px;
-}
 
 #app-title {
   visibility: hidden;
@@ -115,21 +117,21 @@ h4 {
 }
 
 .status-light {
-    width: 40px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 
     background: url('https://cdn.rawgit.com/slowbeam/d24f18e09a0bd0841a4a8e77b010182e/raw/595663586e59a71cdbb1d37135a2364281e84df4/beat-machine-status-light.svg');
-    background-size: 42px 75px;
+    background-size: 25px 25px;
     background-repeat: no-repeat;
 
 }
 
 .status-light-lit {
-    width: 40px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 
     background: url('https://cdn.rawgit.com/slowbeam/3add235538db3ef5449617450db0b2f8/raw/5a49bcf27c6b03372e352cd2e19c7c49c6eed86f/beat-machine-status-light-lit.svg');
-    background-size: 42px 75px;
+    background-size: 25px 25px;
     background-repeat: no-repeat;
 
 }
@@ -139,66 +141,66 @@ h4 {
 }
 
 .magenta-button {
-  min-height: 75px;
-  min-width: 42px;
+  min-height: 48px;
+  min-width: 25px;
   background: url('https://cdn.rawgit.com/slowbeam/145b3136f9561d64197aee694bd1eb58/raw/4f63f7ee459748ab4856211b5310ce5f4cd0ea96/beat-machine-button-magenta-dark.svg');
-  background-size: 42px 75px;
+  background-size: 25px 48px;
   background-repeat: no-repeat;
 }
 
 .magenta-button-lit {
-  min-height: 75px;
-  min-width: 42px;
+  min-height: 48px;
+  min-width: 25px;
   background: url('https://cdn.rawgit.com/slowbeam/b67b642c55fcf85c712acf3c0e8086d6/raw/06c70e119d475cfe1282822f5bb31548e58f714d/beat-machine-button-magenta-lit.svg');
-  background-size: 42px 75px;
+  background-size: 25px 48px;
   background-repeat: no-repeat;
 }
 
 .purple-button {
-  min-height: 75px;
-  min-width: 42px;
+  min-height: 48px;
+  min-width: 25px;
   background: url('https://cdn.rawgit.com/slowbeam/349027d691475d1949a325fed9bd3e0d/raw/d74499d7827b0105e6b666187811e2f9172469b7/beat-machine-button-purple-dark.svg');
-  background-size: 42px 75px;
+  background-size: 25px 48px;
   background-repeat: no-repeat;
 }
 
 .purple-button-lit {
-  min-height: 75px;
-  min-width: 42px;
+  min-height: 48px;
+  min-width: 25px;
   background: url('https://cdn.rawgit.com/slowbeam/de32046165d9f881ebe0cf29e45e2bb2/raw/d57af59b6531ce1afa30c58d2397fe2da1494db9/beat-machine-button-purple-lit.svg');
-  background-size: 42px 75px;
+  background-size: 25px 48px;
   background-repeat: no-repeat;
 }
 
 .green-button {
-  min-height: 75px;
-  min-width: 42px;
+  min-height: 48px;
+  min-width: 25px;
   background: url('https://cdn.rawgit.com/slowbeam/b1d34d910463890fb0d650b250ce96d4/raw/7dac543f449230aee255baffae3e72d34f84ede1/beat-machine-button-green-dark.svg');
-  background-size: 42px 75px;
+  background-size: 25px 48px;
   background-repeat: no-repeat;
 }
 
 .green-button-lit {
-  min-height: 75px;
-  min-width: 42px;
+  min-height: 48px;
+  min-width: 25px;
   background: url('https://cdn.rawgit.com/slowbeam/830e378cdbb06c6c089919944422887e/raw/a428c007751c099b81ced63fb27af7934cc4fb30/beat-machine-button-green-lit.svg');
-  background-size: 42px 75px;
+  background-size: 25px 48px;
   background-repeat: no-repeat;
 }
 
 .blue-button {
-  min-height: 75px;
-  min-width: 42px;
+  min-height: 48px;
+  min-width: 25px;
   background: url('https://cdn.rawgit.com/slowbeam/08465a6e2279024a53f4fa9a50f595ae/raw/90684825fb262548a44b7294390f3b8ee58f381b/beat-machine-button-blue-dark.svg');
-  background-size: 42px 75px;
+  background-size: 25px 48px;
   background-repeat: no-repeat;
 }
 
 .blue-button-lit {
-  min-height: 75px;
-  min-width: 42px;
+  min-height: 45px;
+  min-width: 23px;
   background: url('https://cdn.rawgit.com/slowbeam/dc52705dd6587ef92c6f47bcf6947214/raw/a41f702c7e208e49caa2e331155209bc1200c3ab/beat-machine-button-blue-lit.svg');
-  background-size: 42px 75px;
+  background-size: 25px 48px;
   background-repeat: no-repeat;
 }
 
@@ -427,10 +429,10 @@ h4 {
 }
 
 input[type=submit] {
-  width: 140px;
-  height: 58px;
+  width: 85px;
+  height: 35px;
   font-family: "antipasto";
-  font-size: 30px;
+  font-size: 17px;
   background: url('https://cdn.rawgit.com/slowbeam/b5d114d94b8f579bf06d54a5ff294c99/raw/7c692a182dd6acde6ae16b6b842848e125f8f0e0/beat-machine-button-wide.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -447,11 +449,11 @@ input[type=submit]:hover {
 }
 
 #clear-button {
-      margin-left: 30px;
-      width: 140px;
-      height: 58px;
+      margin-left: 10px;
+      width:85px;
+      height: 35px;
       font-family: "antipasto";
-      font-size: 30px;
+      font-size: 17px;
       background: url('https://cdn.rawgit.com/slowbeam/b5d114d94b8f579bf06d54a5ff294c99/raw/7c692a182dd6acde6ae16b6b842848e125f8f0e0/beat-machine-button-wide.svg');
       background-repeat: no-repeat;
       background-position: center;
@@ -486,16 +488,16 @@ input[type="text"]{
 
 select {
   font-family: "antipasto";
-  font-size: 28px;
-  height: 40px;
+  font-size: 17px;
+  height: 22px;
   background-color:  #efeff4;
   color: #7676a2;
 }
 
 .drumkit-load-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  margin-left: 280px;
-  margin-top: -100px;
-  margin-bottom: 40px;
+  margin-left: 185px;
+  margin-top: -130px;
 }
